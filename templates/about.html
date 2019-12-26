@@ -1,0 +1,13 @@
+<h1>Woo!</h1>
+<form action="">
+  <label for="name">What is your name?</label>
+  <input type="text" name="yourname" />
+  <input type="submit" value="Submit" />
+
+</form>
+
+{% if yourname is not None %}
+{{ yourname }}
+{% endif %}
+
+It is {% now "jS F Y H:i" %}
